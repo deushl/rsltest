@@ -1,0 +1,4 @@
+.ajax-loader.dot_line > div {
+    background: rgba(0, 0, 0, 0) url("../../img/ldrs/loader_dot_line.gif") no-repeat scroll 0 0 / contain;
+    height: 14px;
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8" />
+    <title>{feale:app_name}{feale:app_login}</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="shortcut icon" href="{feale:ficon_path}" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/jszip-2.5.0/dt-1.10.18/b-1.5.2/b-colvis-1.5.2/b-flash-1.5.2/b-html5-1.5.2/b-print-1.5.2/cr-1.5.0/r-2.2.2/rg-1.0.3/rr-1.2.4/datatables.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/plugins/select2/410/css/select2.min.css" />
+    <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/mnot/css/MetroNotificationStyle.css" rel="stylesheet" type="text/css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="assets/plugins/lcswitch/lc_switch.css" />
+    <link href="https://unpkg.com/tippy.js@6/animations/scale.css" rel="stylesheet">
+    <link href="assets/css/ldrs/cog_circle_svg.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/themes/md-style1.css?cb=105" rel="stylesheet" type="text/css" id="style_color_r"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/themes/vuexy/app-assets/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/flatpickr/flatpickr.min.css">
+    <!-- END: Vendor CSS-->
+
+    <!-- Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/themes/vuexy/app-assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/themes/vuexy/app-assets/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/themes/vuexy/app-assets/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/themes/vuexy/app-assets/css/components.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/themes/vuexy/app-assets/css/core/menu/menu-types/vertical-menu.css">
+
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/themes/vuexy/assets/css/style.css">
+    <!-- END: Custom CSS-->
+
+</head>
+
+<body  class="vertical-layout vertical-menu-modern navbar-floating footer-static" data-menu="vertical-menu-modern"> 
+    <div data-bh-lwire="mainmenu,gotop,btn_act,feather,tippy"></div>
+
+    <!-- BEGIN: Header-->
+    <nav class="header-navbar navbar navbar-expand-lg align-items-center floating-nav navbar-light navbar-shadow">
+        <div class="navbar-container d-flex content">
+            <div class="bookmark-wrapper d-flex align-items-center">
+                <ul class="nav navbar-nav d-xl-none">
+                    <li class="nav-item"><a class="nav-link menu-toggle" href="javascript:void(0);"><i class="ficon" data-feather="menu"></i></a></li>
+                </ul>
+            </div>
+            <h2 id="bh-pg-title" class="page-title">{feale:DFLT_MODULE_NAME}<small> {feale:DFLT_MODULE_DESCR}</small></h2>
+            {mmodule:usernav}
+        </div>
+    </nav>
+    <!-- END: Header-->
+
+    <!-- BEGIN: Main Menu-->
+    <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav flex-row">
+                <li class="nav-item mr-auto">
+                    <a class="navbar-brand" href="/">
+                        <span class="brand-logo">
+                            <img src="{feale:logo_path_sm}" alt="{feale:app_name}" data-svg="true"/>
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="d-block d-xl-none text-primary toggle-icon font-medium-4" data-feather="x"></i><i class="d-none d-xl-block collapse-toggle-icon font-medium-4  text-primary" data-feather="disc" data-ticon="disc"></i></a></li>
+            </ul>
+        </div>
+        <div class="shadow-bottom"></div>
+        <div class="main-menu-content">
+            {mmodule:mainnav}
+        </div>
+    </div>
+    <!-- END: Main Menu-->
+
+    <!-- BEGIN: Content-->
+    <div class="app-content content ">
+        <div class="content-overlay"></div>
+        <div class="header-navbar-shadow"></div>
+        <div class="content-wrapper">
+            <div class="content-header row">
+                <div class="content-header-left col-md-9 col-12 mb-2">
+                    <div class="row breadcrumbs-top">
+                        <div class="col-12">
+                            <div class="bh-bc-row-container">
+                                <div class="bh-bc-container">
+        
+                                    <ul class="bh-breadcrumb"></ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-body">
+                <div class="mcontent">
+                    <div id="bh-ntfr-cont" class="bh-ntfr-cont"></div>
+                    <div class="mcontainer card">
+                        <div style="display: none;" id="comm_cont-00" class=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END: Content-->
+
+    <div class="sidenav-overlay"></div>
+    
+    <!-- BEGIN: Footer-->
+    <footer class="footer footer-static footer-light">
+        <p class="clearfix mb-0">
+            <span class="float-md-left d-block d-md-inline-block mt-25">
+                {feale:credits_brand} {feale:fw_version}
+            </span>
+        </p>
+    </footer>
+    <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
+    <!-- END: Footer-->
+
+    <div class="bh-iblock-screen animated fast fadeIn">
+        <div class="bh-iblock-cell">
+            <div class="bh-iblock-mid">
+                <span class="bh-iblock-title">{feale:app_name}{feale:app_description}</span>
+                <p class="pText"></p>
+                {mmodule:_ldr_cogs_svg}
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="assets/css/themes/vuexy/app-assets/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="assets/css/themes/vuexy/app-assets/js/core/app-menu.js"></script>
+    <script src="assets/css/themes/vuexy/app-assets/js/core/app.js"></script>
+    <!-- END: Theme JS-->
+
+    <script>
+        var cAData='{core_sets:_cAppCKData}',
+        cCurWSComm="",
+        _APP_NAME_='{feale:app_name}',
+        _BH_FESets={core_sets:bhfe_sets}
+    </script>
+    <script>
+        {dcode:
+            use Resilia\Aspects\System\System;
+            $arR = System::getFEDisplayConstants();
+            echo html_entity_decode($arR["constants"], null,'UTF-8');
+        dcode}
+    </script>
+            
+    <script data-main="fe_libs/app_rq.php?noext" src="fe_libs/bh/rq.jx"></script>
+                    
+</body>
+</html>

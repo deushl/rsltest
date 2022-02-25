@@ -1,0 +1,553 @@
+@media (min-width: 1280px) { 
+    .header .hor-menu {
+          margin-left: 99px;
+    }
+}
+
+@media (max-width: 1024px) { 
+    .header .hor-menu {
+          margin-left: 29px;
+    }
+}
+
+/***
+Large notebooks and desktops
+***/
+ @media (min-width: 980px) { 
+      /***
+      Page content
+      ***/
+      .page-content { 
+        min-height: 860px; 
+    }
+
+    .page-content.no-min-height {
+        min-height: auto;
+    }
+
+    .full-width-page .page-content {
+        margin-left: 0px !important;
+    }
+}
+   
+/***
+For tablets and phones
+***/
+@media (max-width:979px) { 
+    
+    /***
+    Body
+    ***/
+    body {
+        margin: 0px !important;
+    }    
+
+    /***
+     Page header
+     ***/
+     .header {
+         margin: 0 !important;
+         position: fixed;
+     }
+
+    .header .nav li.dropdown i {
+        display: inline-block;
+        position: relative;
+        top:1px;
+        right:0px;
+    }
+
+    .header .nav {
+        margin-bottom: 0px !important;
+    }
+    
+    .header .brand {
+        margin: 0 0 0 22px !important;
+    }
+
+    /***
+    Page container
+    ***/
+    .page-container {
+        margin: 45px 0 !important;
+        padding: 0 !important;
+    }
+
+    .fixed-top .page-container {
+        margin: 45px 0 !important;
+    }
+
+    /***
+      Page content
+      ***/
+      .page-content {
+          margin: 0px !important;
+          padding: 0px !important;          
+        min-height: 760px; 
+      }
+
+    /***
+    Page sidebar
+    ***/
+    .page-sidebar {
+        margin: 0 20px;
+        background-color:#A1C5D9 !important
+    }
+
+    .page-sidebar.in {
+        margin: 0px 20px;
+        position: relative;
+    }
+
+    .page-sidebar .sidebar-toggler {
+        display: none;
+    }
+
+    .page-sidebar ul {
+        position: static;
+        width: inherit;
+    }
+    .page-sidebar>ul>li:last-child>a {
+        border-bottom:0 !important
+    }
+    .page-sidebar .sidebar-search input {
+        background-color:#232427 !important
+    }
+    .page-sidebar >ul>li  {
+        line-height: 12px;
+    }
+    .page-sidebar > ul > li.active {
+        box-shadow: none !important;
+    }
+
+    .page-sidebar .selected {
+        display: none !important;
+    }
+
+    .page-sidebar .sidebar-search {
+      width: 220px;
+      margin-top: 20px;
+      margin-bottom:20px;
+    }
+    .page-sidebar .no-search {
+      display: none;
+    }
+    .nav-collapse #bck-btn {
+        margin-top: -42px !important;
+        position: fixed !important;
+        z-index:9999;
+    }
+    .nav-collapse #bck-btn > div{
+        left:-21px !important;
+        right:auto !important;
+        box-shadow: 4px 1px 2px rgba(69, 69, 69, 0.46) !important;
+        border-radius: 0 8px 8px 0 !important;
+        width: 38px;
+        height: 37px;
+    }
+
+    /***
+    Page title
+    ***/
+
+    /***
+    Styler panel
+    ***/
+    .styler-panel {
+        top:55px;
+        right:20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1280px) { 
+
+    /***
+    Form wizard
+    ***/
+    .form-wizard .step .desc {
+      margin-top: 10px;
+      display: block;
+    }
+
+    /***
+    Pricing tables
+    ***/
+
+    .pricing-table .rate .price,
+    .pricing-table2 .rate .price {
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+} 
+ 
+@media (min-width: 768px) and (max-width: 979px) { 
+
+    /***
+    Body
+    ***/
+    body {
+         padding-top: 0px;
+    }
+
+    /***
+    Page sidebar
+    ***/
+    .page-sidebar .btn-navbar.collapsed .arrow { 
+        display: none;
+    }    
+
+    .page-sidebar .btn-navbar .arrow {
+      position: absolute;
+      right: 25px;
+      width: 0; 
+      height: 0;
+      top:50px;
+      border-bottom: 15px solid #5f646b;
+      border-left: 15px solid transparent; 
+      border-right: 15px solid transparent; 
+    }
+
+} 
+ 
+@media (max-width: 767px) { 
+    
+    /***
+    Page header
+    ***/
+    .header .brand {
+        margin: 0 0 0 23px !important;
+    }
+    .header .navbar-inner .container-fluid,
+    .header .navbar-inner .container {
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+    }
+
+    .header .top-nav .nav{  
+         margin-top: 0px;
+         margin-right: 5px;
+    }
+
+    .header .nav > li > .dropdown-menu.notification:after, 
+    .header .nav > li > .dropdown-menu.notification:before {
+        margin-right: 180px;
+    }
+
+    .header .nav > li > .dropdown-menu.notification {
+          margin-right: -180px;
+    }
+
+    .header .nav > li > .dropdown-menu.inbox:after, 
+    .header .nav > li > .dropdown-menu.inbox:before {
+        margin-right: 140px;
+    }
+
+    .header .nav > li > .dropdown-menu.inbox {
+          margin-right: -140px;
+    }
+    .page-sidebar {
+        margin: 0 10px;
+    }
+
+    .page-sidebar.in {
+        margin: 0px 10px;
+    }
+
+    .header .nav > li > .dropdown-menu.tasks:after, 
+    .header .nav > li > .dropdown-menu.tasks:before {
+        margin-right: 90px;
+    }
+
+    .header .nav > li > .dropdown-menu.tasks {
+          margin-right: -90px;
+    }
+    .dropdown.user .username {
+        display: none;
+      }
+    
+    /***
+    Page content
+    ***/
+    .page-content {
+        padding: 0 10px !important;
+    }
+
+    /***
+    Page title
+    ***/
+    
+    /***
+    Styler pagel
+    ***/
+    .styler-panel {
+        top:58px;
+        right:12px;
+    }    
+
+    /***
+    Page breadcrumb
+    ***/
+    .breadcrumb {
+        padding-left: 10px;
+          padding-right: 10px;
+    }
+
+    /***
+    Portlet form action
+    ***/
+    .portlet-body.form .form-actions{
+      padding-left: 15px;    
+    } 
+
+    /***
+    Gritter notification
+    ***/
+    #gritter-notice-wrapper {
+        right:1px !important;
+    }
+
+    /***
+    Form input validation states
+    ***/
+    .input-icon .input-error, 
+    .input-icon .input-warning, 
+    .input-icon .input-success { 
+        top:-27px;
+        float: right;
+        right:10px !important;
+    }    
+
+    /***
+    Advance tables
+    ***/
+    .table-advance tr td.highlight:first-child a {
+        margin-left: 8px;
+    }
+
+    /***
+    Footer    
+    ***/    
+    .footer {
+        padding-left: 10px;
+        padding-right: 10px;        
+    }    
+    
+    .footer .go-top {  
+        float: right;
+        display: block;
+        margin-top: -22px;
+        margin-right: 0px;
+        margin-bottom: 5px !important;
+    }
+
+    /***
+    Vertical inline menu
+    ***/
+    .ver-inline-menu li.active:after {
+        display: none;
+    }
+
+    /***
+    Form controls
+    ***/
+    .form-horizontal .form-actions {
+          padding-left: 180px;     
+      }
+
+      .portlet .form-horizontal .form-actions {
+          padding-left: 190px;     
+      }
+    .nav-collapse #bck-btn > div{
+        left:-11px !important;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /***
+    Header navbar
+    .header .nav {
+        clear:both !important;
+    }
+    ***/
+    
+
+    .header .nav > li.dropdown .dropdown-toggle {
+          margin-top:1px !important;
+      }    
+
+      .header .nav li.dropdown .dropdown-toggle .badge {
+          top: 11px;
+      }
+      
+      /***
+    Page sidebar
+    ***/
+    .page-sidebar.in {
+        
+    }
+
+    /***
+    Styler panel
+    ***/
+    .styler-panel {
+        top:92px;
+        right:12px;
+    }    
+
+    /***
+    Page title
+    ***/
+    .page-title small {
+        display: block;
+        clear: both;
+    }
+
+    /***
+    Dashboard date range panel
+    ***/
+    .page-content .breadcrumb .dashboard-date-range  {
+        padding-bottom: 8px;
+    } 
+
+    .page-content .breadcrumb .dashboard-date-range span {
+        display: none;
+    }
+
+    /***
+    Login page
+    ***/
+    .login .logo {
+        margin-top:10px;
+    }
+
+    .login .content {
+        padding: 30px; 
+        width: 222px;
+    }
+
+    .login .content h3 {
+        font-size: 22px;
+    }
+
+    .login .content .m-wrap {
+          width: 180px;
+    }
+
+    .login .checkbox {
+        font-size: 13px;
+    }
+
+    /***
+    Form controls
+    ***/    
+    .form-horizontal.form-bordered .control-label {
+        float: none;
+        width: auto;
+        padding-top: 0;
+        text-align: left;
+        margin-top: 0;
+        margin-left: 10px;
+    }
+
+    .form-horizontal.form-bordered .controls {
+        padding-top: 0 !important;
+        border-left: 0 !important;    
+    }
+
+    .form-horizontal.form-bordered.form-label-stripped .control-group:nth-child(even) {
+      background-color: transparent !important;
+    } 
+
+    .form-horizontal.form-bordered.form-label-stripped .control-group:nth-child(even) .controls {
+      background-color: transparent !important;  
+    }
+
+    .form-horizontal.form-row-seperated .control-label {
+        float: none;
+        width: auto;
+        padding-top: 0;
+        text-align: left;
+        margin-left: 10px;
+    }
+
+      .form-horizontal.form-row-seperated .controls {
+        border-left: 0;
+        margin-left: 10px;
+      }
+
+      .portlet .form-horizontal .form-actions {
+          padding-left: 10px;     
+      }
+
+    /***
+    Hidden phone
+    ***/
+    .hidden-480 {
+        display: none;
+    }
+
+    /***
+    Modal header close button fix
+    ***/
+    .modal-header .close {
+        margin-top: 5px !important;
+    }
+
+    /***
+    Fix text view
+    ***/
+    .control-group .controls .text {
+          display: block !important;
+          margin-bottom: 10px;
+      }
+      
+    .page-lock .page-lock-info input {
+        width: auto;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .header .nav > li.dropdown .dropdown-toggle {
+      padding-left: 8px !important;
+      padding-right: 8px !important;
+    }
+
+    /***
+    Hidden phone
+    ***/
+    .hidden-320 {
+        display: none;
+    }
+} 
+
+
+@media screen and (max-width: 1600px) {
+    .dd3-content .text-cont {
+        
+        width: 70%;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .dd3-content .text-cont {
+        
+        width: 65%;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .dd3-content .text-cont {
+        
+        width: 60%;
+    }
+}
+
+.bh-embed-container {
+    position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; 
+}
+.bh-embed-container iframe, .bh-embed-container object, .bh-embed-container embed {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+}

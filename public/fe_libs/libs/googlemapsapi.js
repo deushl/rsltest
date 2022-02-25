@@ -1,0 +1,1 @@
+define(['async!http://maps.google.com/maps/api/js?key=AIzaSyCPNbnb112pBatxrZEDiKK90owmsxRER7A'], function() {});

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+
+<head>
+    <meta charset="utf-8" />
+    <title>{feale:app_name}{feale:app_login}</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <link href="assets/mnot/css/MetroNotificationStyle.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="assets/css/ldrs/cog_circle_svg.css" rel="stylesheet" type="text/css"/>
+
+    <link href="assets/css/themes/md-style1.css" rel="stylesheet" type="text/css" id="style_color_r"/>
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
+
+    <link rel="shortcut icon" href="{feale:ficon_path}" />
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/themes/vuexy/app-assets/vendors/css/vendors.min.css">
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/themes/vuexy/app-assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/themes/vuexy/app-assets/css/bootstrap-extended.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/themes/vuexy/app-assets/css/colors.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/themes/vuexy/app-assets/css/components.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/themes/vuexy/app-assets/css/themes/dark-layout.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/themes/vuexy/app-assets/css/themes/bordered-layout.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/themes/vuexy/app-assets/css/themes/semi-dark-layout.min.css">
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/themes/vuexy/app-assets/css/core/menu/menu-types/vertical-menu.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/themes/vuexy/app-assets/css/plugins/forms/form-validation.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/themes/vuexy/app-assets/css/pages/page-auth.min.css">
+    <!-- END: Page CSS-->
+
+    <!-- BEGIN: Custom CSS-->
+    
+    <!-- END: Custom CSS-->
+</head>
+
+<body class="login blank-page">
+    <div style="display: none;" id="comm_cont-00" class=""></div>
+
+    <div class="bh-iblock-screen animated fast fadeIn">
+        <div class="bh-iblock-cell">
+            <div class="bh-iblock-mid">
+                <span class="bh-iblock-title">{feale:app_name}{feale:app_description}</span>
+                <p class="pText"></p>
+                {mmodule:_ldr_cogs_svg}
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var _BH_gvSID='',
+        cAData='{core_sets:_cAppCKData}',
+        cCurWSComm="",
+        _APP_NAME_='{feale:app_name}',
+        _BH_FESets={core_sets:bhfe_sets}
+    </script>
+    <script>
+        {dcode:
+            use Resilia\Aspects\System\System;
+            $arR = System::getFEDisplayConstants();
+            echo html_entity_decode($arR["constants"], null,'UTF-8');
+        dcode}
+    </script>
+
+    <script data-main="fe_libs/landing_rq.php?noext" src="fe_libs/bh/rq.jx"></script>
+</body>
+
+</html>

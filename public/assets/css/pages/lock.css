@@ -1,0 +1,76 @@
+.bh-page-lock .page-body {	
+   width: 500px;
+   padding: 10px;
+   background: url(../../img/bg-white-lock.png) repeat;
+}
+
+.bh-page-lock .page-body:after,
+.bh-page-lock .page-body:before {
+	display: table;
+	content: "";
+	line-height: 0;
+}
+
+.bh-page-lock .page-body:after {
+	clear: both;
+}
+
+.bh-page-lock img.bh-page-lock-img {
+	float: left;
+	width: 200px;
+	height: auto;
+}
+
+.bh-page-lock .bh-page-lock-info {
+	float: right;
+	width: 280px;
+}
+
+.bh-page-lock .bh-page-lock-info h1 {
+	margin-top: -5px;
+	font-weight: 300;
+	color: #fff;
+	font-size: 28px;
+	line-height: 32px;
+}
+
+.bh-page-lock .bh-page-lock-info form {
+	margin: 25px 0 20px 0;
+}
+
+.bh-page-lock .bh-page-lock-info input {
+	background: #fff;
+}
+
+.bh-page-lock .relogin {
+	margin-top: 20px;
+}
+
+.bh-page-lock .relogin a {
+	color: #e1e1e1;
+}
+
+/*Responsive*/
+@media (max-width: 480px) {
+	.bh-page-lock .page-body {	
+		padding: 10px;
+	    text-align: center;	
+		width: 260px;
+	}
+
+	.bh-page-lock img.bh-page-lock-img {
+		float: none !important;
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+	.bh-page-lock .bh-page-lock-info {
+		float: none !important;
+		width: 260px;		
+		margin: 0 auto;
+	}
+	.bh-page-lock .bh-page-lock-info form {
+		margin-bottom: 0;
+	}	
+}

@@ -1,0 +1,4 @@
+{dcode: $cImgLD="assets/img/ldrs/";
+$cS= '<div class="loader-cog-circle-top"></div><div class="loader-cog-circle-svg">'.file_get_contents("{$cImgLD}cogs/cog16.svg").file_get_contents("{$cImgLD}cogs/cog04.svg").file_get_contents("{$cImgLD}cogs/cog06.svg").'</div>';
+echo trim(preg_replace('/\s+/', ' ', $cS));
+dcode}

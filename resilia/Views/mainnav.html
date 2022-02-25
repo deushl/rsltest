@@ -1,0 +1,17 @@
+<div id="bh-nav-sidebar" name="bh-nav-sidebar" class="bh-nav-main bh-psidebar">
+    <ul class="nav-above">
+        <li>
+            <div class="bh-bkbtn"   style="display: none;">
+                <span class="ribbon"></span>
+                <div class="bh-tooltip" title="{feale:goback}">
+                    <span class="svg-icon svg-icon-primary solid svg-icon-l">{svgi:Text/Undo}</span>
+                </div>
+            </div>
+        </li>
+    </ul>
+    
+    {dcode:
+        use App\Http\Controllers\FrameController;
+        echo FrameController::processNavigation("ul", "bh-nav-menu navigation navigation-main", "nav-item", "menu-content");
+    dcode}
+</div>

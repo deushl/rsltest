@@ -1,0 +1,4 @@
+.ajax-loader.gray_sq > div {
+    background: rgba(0, 0, 0, 0) url("../../img/ldrs/loader01.gif") no-repeat scroll 0 0 / contain;
+    height: 9px;
+}

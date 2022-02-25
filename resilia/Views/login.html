@@ -1,0 +1,95 @@
+<div  data-bh-lwire="btn_act,formval,ib_oenter"></div>
+<div class="app-content content ">
+    <div class="content-overlay"></div>
+    <div class="header-navbar-shadow"></div>
+    <div class="content-wrapper">
+        <div class="content-header row">
+        </div>
+        <div class="content-body">
+            <div class="auth-wrapper auth-v1 px-2">
+                <div class="auth-inner py-2">
+                
+                    <div class="card mb-0">
+                        <div class="card-body">
+                            <div id="frm-lgc-">
+                                <a href="javascript:void(0);" class="brand-logo">
+                                    <img src="{feale:logo_path}" alt="{feale:app_name}" /> 
+                                </a>
+
+                                <h3 class="card-title mb-1">{femle:login_legend}</h3>
+                                <p class="card-text mb-2"></p>
+                                <div id="bh-ntfr-cont1" class="bh-ntfr-cont"></div>
+
+                                <form id="form-lg-" class="auth-login-form mt-2" action="index.html" method="POST" novalidate="novalidate">
+                                    <div class="form-group">
+                                        <label for="username" class="form-label">{femle:username}</label>
+                                        <input type="text" class="form-control focusondisplay onenter" data-onev-source="btns-lg-" id="username" name="_ur" placeholder="" aria-describedby="username" tabindex="1" autofocus="" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="d-flex justify-content-between">
+                                            <label for="login-password">{femle:password}</label>
+                                        </div>
+                                        <div class="input-group input-group-merge form-password-toggle">
+                                            <input type="password" class="form-control form-control-merge onenter" data-onev-source="btns-lg-" id="pw" name="_cs" tabindex="2" placeholder="············" aria-describedby="login-password" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-center">
+                                        <button id="btns-lg-" type="button" class="btn btn-relief-primary waves-effect waves-light" source="form-lg-" an="login" data-bhfe-ntfr-cid="bh-ntfr-cont1" tabindex="4">
+                                            {femle:sign_in} &nbsp;<span class="svg-icon svg-icon-white svg-icon-md solid">{svgi:Navigation/Sign-in}</span>
+                                        </button>
+                                    </div>
+                                </form>
+
+                                <p class="text-center mt-2">
+                                </p>
+
+                                <div class="divider my-2">
+                                </div>
+
+                                <div class="auth-footer-btn d-flex justify-content-center">
+                                    <div class="forget-password">
+                                        <button class="btn btn-outline-primary waves-effect waves-light" id="btnx-fpw" source="frm-lgc-" target="frm-fpwc-" an="recover"><span class="svg-icon svg-icon-dark svg-icon-md">{svgi:Code/Question-circle}</span>&nbsp; {femle:forgotpw_question} </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="frm-fpwc-" class="" style="display: none;">
+                                <h3 class="form-title">{femle:forgotpw_question}</h3>
+                                <p>{femle:forgotpw_legend}</p>
+                                <div id="bh-ntfr-cont2" class="bh-ntfr-cont"></div>
+                
+                                <form id="form-fpw-" class="mt-2">
+                                    <div class="form-group">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control focusondisplay onenter" id="email" name="_ur" placeholder="" aria-describedby="username" tabindex="5" autofocus="" data-onev-source="btns-send-" required>
+                                    </div>
+                
+                                    <div class="d-flex justify-content-center">
+                                        <button id="btns-send-" type="button" class="btn btn-relief-primary waves-effect waves-light" source="form-fpw-" an="recover_pw" data-bhfe-ntfr-cid="bh-ntfr-cont2" tabindex="6">
+                                            {femle:send} &nbsp;<span class="svg-icon svg-icon-white svg-icon-md">{svgi:Navigation/Right-2}</span>
+                                        </button>
+                                    </div>
+                                </form>
+                
+                                <div class="divider my-2">
+                                </div>
+
+                                <button type="button" id="btnx-bck-" class="btn btn-outline-primary waves-effect waves-light" target="frm-lgc-" source="frm-fpwc-" an="recover">
+                                    <span class="svg-icon svg-icon-dark svg-icon-md">{svgi:Code/Left-circle}</span>&nbsp; {femle:return}
+                                </button>
+                
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <div class="copyright">
+                    {feale:credits_brand} {feale:fw_version}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

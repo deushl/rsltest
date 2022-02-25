@@ -1,0 +1,155 @@
+.loader-cog {
+    height: 100px;
+    margin: 0 auto 1rem;
+    position: relative;
+    width: 80px;
+}
+.loader-cog i {
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+.loader-cog i.fa:first-child {
+    animation: 1.5s linear 0s normal none infinite running app-loader-rotate-clockwise;
+    color: #bbb;
+    font-size: 28px;
+    height: 28px;
+    left: 50px;
+    line-height: 29px;
+    top: 40px;
+    width: 28px;
+}
+.loader-cog i.fa:nth-child(2) {
+    animation: 1.5s linear 0s normal none infinite running app-loader-rotate-counterclockwise;
+    color: #bbb;
+    font-size: 42px;
+    height: 42px;
+    left: 14px;
+    line-height: 43px;
+    top: 6px;
+    width: 42px;
+}
+.loader-cog i.fa:last-child {
+    animation: 1.5s linear 0s normal none infinite running app-loader-rotate-counterclockwise;
+    color: #bbb;
+    font-size: 56px;
+    height: 56px;
+    left: 0;
+    line-height: 57px;
+    top: 48px;
+    width: 56px;
+}
+.loader-cog i.glyphicons:first-child {
+    
+    height: 28px;
+    left: 53px;
+    line-height: 29px;
+    top: 45px;
+    width: 28px;
+}
+.loader-cog i.glyphicons:first-child i:before {
+    animation: 1s linear 0s normal none infinite running app-loader-rotate-clockwise;
+    color: #bbb;
+    font-size: 28px;
+}
+.loader-cog i.glyphicons:nth-child(2) {
+    
+    height: 42px;
+    left: 14px;
+    line-height: 43px;
+    top: 7px;
+    width: 42px;
+}
+.loader-cog i.glyphicons:nth-child(2) i:before {
+    animation: 1.5s linear 0s normal none infinite running app-loader-rotate-clockwise;
+    color: #bbb;
+    font-size: 42px;
+}
+.loader-cog.glyphicons:last-child {
+    
+    height: 56px;
+    left: 0;
+    line-height: 57px;
+    top: 48px;
+    width: 56px;
+}
+.loader-cog i.glyphicons:last-child i:before {
+    animation: 2.5s linear 0s normal none infinite running app-loader-rotate-counterclockwise;
+    color: #bbb;
+    font-size: 56px;
+}
+.loader-cog-circle {
+    background-color: #607082;
+    border-color: #ffffff;
+    border-radius: 35px !important;
+    border-style: solid;
+    border-width: 3px;
+    box-shadow: 0 0 3px 3px rgba(69, 69, 69, 0.46);
+    height: 60px;
+    margin: 0 auto 1rem;
+    overflow: hidden;
+    position: relative;
+    width: 60px;
+    z-index: 50; /*this fixes the overflow:hidden in Chrome/Opera. Img trick below also works, but this one is better.  http://stackoverflow.com/questions/5736503/how-to-make-css3-rounded-corners-hide-overflow-in-chrome-opera
+    -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC); */
+}
+.loader-cog-circle i {
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+.loader-cog-circle i.glyphicons:first-child {
+    height: 36px;
+    left: 5px;
+    line-height: 30px;
+    top: 5px;
+    width: 36px;
+}
+.loader-cog-circle i.glyphicons:first-child i:before {
+    animation: 1.5s linear 0s normal none infinite running app-loader-rotate-clockwise;
+    color: #bbb;
+    font-size: 34px;
+}
+.loader-cog-circle i.glyphicons:nth-child(2) {
+    height: 56px;
+    left: 38px;
+    line-height: 43px;
+    top: 12px;
+    width: 56px;
+}
+.loader-cog-circle i.glyphicons:nth-child(2) i:before {
+    animation: 2.5s linear 0s normal none infinite running app-loader-rotate-clockwise;
+    color: #e4e4e4;
+    font-size: 56px;
+}
+.loader-cog-circle i.glyphicons:last-child {
+    height: 57px;
+    left: -13px;
+    line-height: 57px;
+    top: 21px;
+    width: 57px;
+}
+.loader-cog-circle i.glyphicons:last-child i:before {
+    animation: 2.5s linear 0s normal none infinite running app-loader-rotate-counterclockwise;
+    color: #efefef;
+    font-size: 57px;
+}
+
+@keyframes app-loader-rotate-clockwise {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(360deg);
+}
+}
+@keyframes app-loader-rotate-counterclockwise {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(-360deg);
+}
+}

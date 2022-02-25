@@ -1,0 +1,46 @@
+<div id="bh-fe-locks-markup" class="bh-page-lock"  data-bh-lwire="btn_act,ib_oenter,feather,formval">
+    <div class="page-body">
+        <div id="bh-ls-ntfr-cont" class="bh-ntfr-cont"></div>
+        <div class="avt-cont">
+            <div class="avt-circle-top"></div>
+            <div class="avt-circle">
+                <img class="bh-page-lock-img" src="{dcode:
+                                use Resilia\Aspects\System\User;
+                                echo User::getAvatar();
+                            dcode}" alt="">
+            </div>
+        </div>
+        <div class="bh-page-lock-info">
+            <h5>{dcode:
+                    use Resilia\Aspects\System\User;
+                    echo User::getCurrentUserProperty("name");
+                dcode}
+            </h5>
+            <span><em> </em></span>
+            <form id="form-lock">
+                <div id="bh-form-ilnot"></div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="input-group">
+                            <input id="iboe_lcks-cs" name="_cs" type="password" class="form-control bh-focusonshow onenter" placeholder="{feale:password}" source="btns-lcks-cs" required>
+                            <div class="input-group-append">
+                                <button id="btns-lcks-cs" source="form-lock" an="bh-urs" data-bh-act-context="*" type="button" class="btn btn-relief-primary waves-effect waves-light" data-bhfe-ntfr-cid="bh-ls-ntfr-cont">
+                                    <i data-feather='log-in'></i>
+                                </button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="relogin">
+                    <a id="btna_lcks-gb" an="" href="/">{feale:qmark_open}{feale:arent_you}&nbsp;
+                        {dcode:
+                            use Resilia\Aspects\System\User;
+                            echo User::getCurrentUserProperty("name");
+                        dcode} {feale:qmark_close}
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

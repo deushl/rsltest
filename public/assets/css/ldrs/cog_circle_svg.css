@@ -1,0 +1,95 @@
+.loader-cog-circle-svg {
+    background-color: #607082;
+    border-color: #000000;
+    border-radius: 35px !important;
+    border-style: solid;
+    border-width: 6px;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.68);
+    height: 58px;
+    margin: 0 auto 1rem;
+    overflow: hidden;
+    position: relative;
+    width: 58px;
+    z-index: 50;
+    -webkit-box-sizing: initial;
+    box-sizing: initial; 
+}
+.loader-cog-circle-top {
+    border-color: #ffffff;
+    border-radius: 35px !important;
+    border-style: solid;
+    border-width: 4px;
+    box-shadow: inset 0px 3px 8px 2px rgb(0, 0, 0);
+    height: 60px;
+    margin: 0 auto;
+    position: relative;
+    top: 69px;
+    width: 60px;
+    z-index: 100;
+    -webkit-box-sizing: initial;
+    box-sizing: initial; 
+}
+.loader-cog-circle-svg * {
+    -webkit-box-sizing: initial;
+    box-sizing: initial; 
+
+}
+.loader-cog-circle-svg svg {
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+.loader-cog-circle-svg svg:first-of-type {
+    background-size: contain;
+    height: 36px;
+    left: 5px;
+    line-height: 30px;
+    top: 5px;
+    width: 36px;
+    animation: 1.5s linear 0s normal none infinite running app-loader-rotate-clockwise;
+}
+.loader-cog-circle-svg svg:first-of-type path {
+    fill:#bdbcbc80;
+}
+.loader-cog-circle-svg svg:nth-of-type(2) {
+    animation: 2.5s linear 0s normal none infinite running app-loader-rotate-clockwise;
+    background-size: contain;
+    height: 56px;
+    left: 38px;
+    line-height: 43px;
+    top: 8px;
+    width: 56px;
+}
+.loader-cog-circle-svg svg:nth-of-type(2) path {
+    fill:#c7c7c7;
+}
+.loader-cog-circle-svg svg:last-of-type {
+    background-size: contain;
+    height: 57px;
+    left: -13px;
+    line-height: 57px;
+    top: 21px;
+    width: 57px;
+    animation: 2.5s linear 0s normal none infinite running app-loader-rotate-counterclockwise;
+}
+.loader-cog-circle-svg svg:last-of-type path {
+    fill:#efefef;
+}
+
+@keyframes app-loader-rotate-clockwise {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(360deg);
+}
+}
+@keyframes app-loader-rotate-counterclockwise {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(-360deg);
+}
+}

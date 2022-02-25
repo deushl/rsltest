@@ -8,7 +8,7 @@
 
 - [ ] DB is postgres
 - [ ] Middleware FW is Laravel 8
-- [ ] FE FW is from my authory
+- [ ] FE FW is from my authorship
 
 What code to look:
 
